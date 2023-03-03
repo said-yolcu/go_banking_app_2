@@ -1,4 +1,4 @@
-# go_banking_app
+# go_banking_app_2
 
 In this project I will try to build a banking app using go. 
 
@@ -37,4 +37,32 @@ This project is composed of two parts: back-end and front-end. This repo impleme
 
     Further handlers must be added here. Two that come to mind are log-out and sign-out handlers.
 
-# go_banking_app_2
+
+
+# How to Run
+
+DATABASE
+
+1. First of all download pgadmin4 and create a database named banking and a user named postgres.
+
+2. Then open the app.env.template file and delete the writing "<your password here>" and write your postgres user's password instead. 
+
+3.Save the file and change the files name to "app.env".
+
+
+GOLANG
+
+1. Download this project.
+
+2. Run "docker compose up -d" command on the terminal at the address of the project(inside the project). Install docker if it is not  yet installed on your computer.
+
+3. Run "air" command to run the server. You might need to install air as well if it is not installed. If executable file of air is not in alias list, you may need to detect its full address and run it via giving its full address instead of just writing "air".
+
+
+NODE
+
+1. Download the complementary twin of this project here -> https://github.com/said-yolcu/banking_app_node
+
+2. Run "npm install readline-promise" and "npm install cookie" commands on the terminal at the address of the node project.
+
+3. Now you can send requests to the Golang server via terminal interface. 
