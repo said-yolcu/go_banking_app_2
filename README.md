@@ -45,7 +45,7 @@ DATABASE
 
 1. First of all download pgadmin4 and create a database named banking and a user named postgres.
 
-2. Then open the app.env.template file and delete the writing "<your password here>" and write your postgres user's password instead. 
+2. Then open the app.env.template file and delete the writing "$your password here$" and write your postgres user's password instead. 
 
 3.Save the file and change the files name to "app.env".
 
