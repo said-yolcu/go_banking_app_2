@@ -46,7 +46,7 @@ func MyTransactions(ctx *gin.Context, transaction *models.Transaction) {
 
 	// Connect to the other user
 	var transactions []models.Transaction
-	if err := initializers.DB.Table("transactions").Where("State_id = ?", stateId).
+	if err := initializers.DB.Table("transactions").Where("User_id = ?", stateId).
 		Find(&transactions).Error; err != nil {
 
 		fmt.Printf("? Failed to retrieve the transactions ")
